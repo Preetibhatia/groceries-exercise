@@ -43,6 +43,23 @@ for p in sorted_products:
    price_usd = "(${0:.2f})".format(p["price"])
    print ("+ " + p["name"] + price_usd )
 
+# #print number of products:
+# print (product_count)
+# #print first product
+# print (products[0])
+# #print name of first product
+##
+
+# #print name of each product
+# for p in products:
+#     print(p["name"])
+
+# #print in alphabetical order name and price of each product
+# for p in products:
+#     print (p["name"]+" $" +str(p["price"]))
+
+
+
 
 #Code #2
 
@@ -54,7 +71,7 @@ for p in sorted_products:
 #     departments.append(p["department"])
 
 # unique_departments = list(set(departments))
-# unique_departments.sort()
+
 
 # department_count = len(unique_departments)
 
@@ -62,13 +79,15 @@ for p in sorted_products:
 # print ("THERE ARE " + str(department_count)+ " PRODUCTS")
 # print ("-----------------------------------------------")
 
-
+# unique_departments.sort()
 
 # for d in unique_departments:
-#     print (d.title())
+#     matching_products = [p for p in products if p["department"] == d]
+#     matching_products_count = len(matching_products)
+#     print(d.title() + " (" + str(matching_products_count)+ " products)")
 
-# # for d in products:
-# #     if products["department"]
+# for d in products:
+#     if products["department"]
 
 # #pprint (products)
 
