@@ -1,5 +1,16 @@
 #groceries.py
 #from pprint import pprint
+import datetime
+
+today = datetime.date.today()
+print(str(today))
+
+#defining function
+# def to_usd(my_price):
+#     return "${0:,.2f}".format(my_price)
+#calling function
+  # price_usd = to_usd(item['price'])
+  #  print(f"{item['name']} ... {price_usd}")
 
 #code #1
 products = [
@@ -30,7 +41,8 @@ products = [
 product_count = len(products)
 
 print ("-----------------------------------------------")
-print ("THERE ARE " + str(product_count)+ " PRODUCTS")
+#print ("THERE ARE " + str(product_count)+ " PRODUCTS")
+print (f"THERE ARE {product_count} PRODUCTS:")
 print ("-----------------------------------------------")
 
 
@@ -63,32 +75,32 @@ for p in sorted_products:
 
 #Code #2
 
-# departments = []
+departments = []
 
-# for p in products:
-#     #if p["department"] not in departments:
-#      #   departments.append(p["department"])
-#     departments.append(p["department"])
+for p in products:
+    #if p["department"] not in departments:
+     #   departments.append(p["department"])
+    departments.append(p["department"])
 
-# unique_departments = list(set(departments))
+unique_departments = list(set(departments))
 
 
-# department_count = len(unique_departments)
+department_count = len(unique_departments)
 
-# print ("-----------------------------------------------")
-# print ("THERE ARE " + str(department_count)+ " PRODUCTS")
-# print ("-----------------------------------------------")
+print ("-----------------------------------------------")
+print ("THERE ARE " + str(department_count)+ " PRODUCTS")
+print ("-----------------------------------------------")
 
-# unique_departments.sort()
+unique_departments.sort()
 
-# for d in unique_departments:
-#     matching_products = [p for p in products if p["department"] == d]
-#     matching_products_count = len(matching_products)
-#     print(d.title() + " (" + str(matching_products_count)+ " products)")
+for d in unique_departments:
+    matching_products = [p for p in products if p["department"] == d]
+    matching_products_count = len(matching_products)
+    print(d.title() + " (" + str(matching_products_count)+ " products)")
 
-# for d in products:
-#     if products["department"]
+#for d in products:
+#   if products["department"]
 
-# #pprint (products)
+#pprint (products)
 
-# #write some python code here to produce desired output
+#write some python code here to produce desired output
