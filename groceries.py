@@ -10,7 +10,14 @@ print(str(today))
 #     return "${0:,.2f}".format(my_price)
 #calling function
   # price_usd = to_usd(item['price'])
-  #  print(f"{item['name']} ... {price_usd}")
+  # print(f"{item['name']} ... {price_usd}")
+
+#define module
+def my_message():
+    print("Hello from module")
+my_message()
+
+
 
 #code #1
 products = [
@@ -37,6 +44,10 @@ products = [
     ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
     
     #print (type(products))
+
+
+#name = [p for p in products if p["department"]=="snacks"]
+#print ("name")
 
 product_count = len(products)
 
@@ -69,9 +80,6 @@ for p in sorted_products:
 # #print in alphabetical order name and price of each product
 # for p in products:
 #     print (p["name"]+" $" +str(p["price"]))
-
-
-
 
 #Code #2
 
